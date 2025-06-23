@@ -1,5 +1,6 @@
 #include<iostream>
 #include<bitset>
+#include<cmath>
 using namespace std;
 
 int main() {
@@ -29,30 +30,9 @@ int main() {
     // cout << count;
 
     // Print a binary representation of number using bitset
-    // int n = 2;
-    // cout << bitset<32>(n);
+    // int n = -6;
+    // cout << bitset<32>(n);  
     
-    // Print a binary representation of number without using bitset
-
-    // int n = 10;
-    // // int bit = 32;
-
-    // for(int bit = 32; bit >= 0; bit--){
-
-    //     if( n & ( 1 << bit)){
-
-    //         cout << "1 ";
-
-    //     }
-    //     else{
-
-    //         cout << "0 ";
-
-    //     }
-
-    // }
-
-
     // Print Binary representation of any number 
     // int n;
     // cout << " Enter the value of n: ";
@@ -60,25 +40,41 @@ int main() {
     // int ans = 0;
     // int i = 0;
     // while(n != 0){
-    //     int bit = n & 1;
-    //     // reverse karne ka logic
-    //     ans = (pow(10,i)*bit)+ans;
-    //     i++;
-    //     n = n >> 1;
-    // }
-    // cout << ans;
+        //     int bit = n & 1;
+        //     // reverse karne ka logic
+        //     ans = (pow(10,i)*bit)+ans;
+        //     i++;
+        //     n = n >> 1;
+        // }
+        // cout << ans;
+        
+        // Print a binary representation of number without using bitset
+        // int n;
+        // cout << "Enter the value of n: ";
+        // cin >> n;
+        // for(int bit = 31; bit >= 0; bit--){
+        //     if( n & ( 1 << bit)){
+        //         cout << "1 ";
+        //     }
+        //     else{
+        //         cout << "0 ";
+        //     }
+        // }
 
+        //  Binary to Decimal
+        int n;
+        cout << "Enter your binary value: ";
+        cin >> n;
 
-    // reverse of any number
-    int n;
-    cout << "Enter the value of n: ";
-    cin >> n;
+        int i=0, ans=0;
+        while (n != 0){
+            int digit = n % 10;
+            if(digit == 1){
+                ans = pow(2,i) + ans;
+            }
+            n = n / 10;
+            i++;
+        }
+        cout << ans;
 
-    int i = 0;
-    while ( n != 0){
-        int m = n%10;
-        cout << m;
-        n = n/10;
     }
-
-}
