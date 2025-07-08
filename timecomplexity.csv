@@ -1,0 +1,12 @@
+Time Complexity in Decreasing Order				
+Sr, Constraints,    Time Complexity
+
+1,  <= [10 / 11],   O(n!) / O(n^6)
+2,  < [15 / 18],    O(2^n * n^2)
+3,  < 100,          O(n^4)
+4,  < 400,          O(n^3)
+5,  < 2000,         O(n^2 * log n)
+6,  < 10^4,         O(n^2)
+7,  < 10^6,         O(n log n)
+8,  < 10^8,         O(n) / O(log n)
+
