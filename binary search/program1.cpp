@@ -2,12 +2,13 @@
 using namespace std;
 
 int binarySearch(int arr[], int key, int size){
-    int low = 0, high =  (size - 1);
     
+    int low = 0, high =  (size - 1);
     
     while (low <= high){
         
-        int mid = (low + high)/2;
+        // int mid = (low + high)/2; // This formula is correct until int dosen't exceed its limit
+        int mid = low + (high - low)/2; // This formula make sure that our int stays under limit (2^-31 to (2^31 - 1))
         
         if(arr[mid] == key){
             return mid;
