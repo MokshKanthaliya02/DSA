@@ -25,7 +25,7 @@ int main(){
     cout << endl;
 
     char ch[10] = {'a','b','c','d','e','f','g','h','i','j'};
-    char ch[10];
+    ch[10];
     char ch1 = 'a';
     for(int i = 0; i < 10; i++){
         ch[i] = ch1;        
@@ -37,9 +37,9 @@ int main(){
     
     // To find the size of array
     // Method 1:
-    int arr1[15] = {1,2,3,4,5,6};
-    int arr1size = sizeof(arr1)/sizeof(arr1[0]);
-    cout << arr1size << endl;
+    int arr2[15] = {1,2,3,4,5,6};
+    int arr2size = sizeof(arr1)/sizeof(arr1[0]);
+    cout << arr2size << endl;
     // Method 2: using pre-defined function
     vector<int> arr = {2,4,6,8,0,1,3,5,7,9};
     cout << arr.size() << endl;
